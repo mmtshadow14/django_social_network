@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+    <h2>{{ post.author }} : </h2><h1>{{ post.title }}</h1><br/>
+    <img src="{{ post.picture.url }}"><br/><br/>
+    <h3>{{ post.content }}</h3>
+    <p>{{ post.date_posted }}</p>
+    </center>
+{% endblock %}
